@@ -1,0 +1,76 @@
+# .project metadata for KEDA
+# Documentation: https://github.com/cncf/automation/tree/main/utilities/dot-project
+
+# TODO: Add adopters list (ADOPTERS.md)
+# TODO: Add package_managers if distributed via registries
+
+schema_version: "1.0.0"
+slug: "keda"
+name: "KEDA"
+description: "KEDA is a Kubernetes-based Event Driven Autoscaling component. It provides event driven scale for any container running in Kubernetes"
+type: "project"
+project_lead: "jeffhollan" # TODO: AUTO-DETECTED — please verify
+slack_channels: # TODO: AUTO-DETECTED — please verify the channel(s) below
+  - name: "#CKZJ36A5D"
+    link: "https://kubernetes.slack.com/archives/CKZJ36A5D"
+    primary: true
+  - name: "#community"
+  - name: "#keda"
+
+maturity_log:
+  - phase: "graduated"
+    date: "2020-03-12T00:00:00Z"
+    issue: "https://github.com/cncf/toc/pull/925" # TODO: AUTO-DETECTED — please verify
+
+repositories: # TODO: AUTO-DETECTED primary — please verify
+  - url: "https://github.com/kedacore/keda"
+    primary: true
+    # tags: [core, sig-apps] # Optional
+
+website: "https://keda.sh/"
+
+artwork: "https://landscape.cncf.io/logos/keda.svg"
+
+# TODO: Add ADOPTERS.md if your project tracks adopters
+# adopters:
+#   path: "https://github.com/kedacore/keda/blob/main/ADOPTERS.md"
+
+
+# TODO: Add package manager identifiers if your project is distributed via registries
+# package_managers:
+#   docker: "kedacore/keda"
+
+social:
+  twitter: "https://twitter.com/kedaorg"
+
+security:
+  policy:
+    path: "https://github.com/kedacore/keda/blob/main/SECURITY.md"
+  contact:
+    advisory_url: "https://github.com/kedacore/keda/security/advisories/new"
+
+governance:
+  contributing:
+    path: "https://github.com/kedacore/keda/blob/main/CONTRIBUTING.md"
+  code_of_conduct:
+    path: "https://github.com/kedacore/.github/blob/main/CODE_OF_CONDUCT.md"
+
+legal:
+  license:
+    path: "https://github.com/kedacore/keda/blob/main/LICENSE"
+  identity_type:
+    has_dco: true # AUTO-DETECTED — please verify
+    has_cla: false # AUTO-DETECTED — please verify
+    dco_url:
+      path: "https://developercertificate.org/"
+
+documentation:
+  readme:
+    path: "https://github.com/kedacore/keda/blob/main/README.md"
+
+landscape:
+  category: "Orchestration & Management"
+  subcategory: "Scheduling & Orchestration"
+
+# CLOMonitor Score: 94/100
+# Documentation: 100 | License: 100 | Best Practices: 100 | Security: 68
