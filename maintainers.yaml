@@ -1,8 +1,10 @@
 # Maintainer roster for KEDA
 # Documentation: https://github.com/cncf/automation/tree/main/utilities/dot-project
+# Roster source: https://github.com/kedacore/governance/blob/main/MEMBERS.md
 
-
-#  Maintainers: Please connect your GitHub handle to your LFID on openprofile.dev to enable automatic access to CNCF resources. The system will use your primary email address for setup.
+# Maintainers: Create or update your LFID at https://openprofile.dev/.
+# Link your GitHub handle and verify your primary email and company affiliation.
+# CNCF resource provisioning uses your primary email address.
 maintainers:
   - project_id: "keda"
     org: "kedacore"

@@ -5,11 +5,13 @@ on:
     paths:
       - 'project.yaml'
       - 'maintainers.yaml'
+      - '.github/workflows/validate.yaml'
   push:
     branches: [main]
     paths:
       - 'project.yaml'
       - 'maintainers.yaml'
+      - '.github/workflows/validate.yaml'
   workflow_dispatch:
 
 jobs:
@@ -20,7 +22,7 @@ jobs:
         with:
           fetch-depth: 0
 
-      - uses: cncf/automation/.github/actions/validate-project@53810a548b46f33421cd67e57d16e4b7251416d9
+      - uses: cncf/automation/.github/actions/validate-project@d7d25c42f9247f6e4a0f0a99344432c3bbf3447d
         with:
           project_file: 'project.yaml'
 
@@ -31,10 +33,11 @@ jobs:
         with:
           fetch-depth: 0
 
-      - uses: cncf/automation/.github/actions/validate-maintainers@53810a548b46f33421cd67e57d16e4b7251416d9
+      - uses: cncf/automation/.github/actions/validate-maintainers@d7d25c42f9247f6e4a0f0a99344432c3bbf3447d
         with:
           maintainers_file: 'maintainers.yaml'
-          # Disabled until the LFX LLT issue is resolved. Validation is done manually for now.
+          # Disabled until the upstream LFX long-lived token issue is resolved:
+          # https://github.com/cncf/automation/issues/293
           verify_maintainers: 'false'
         env:
           LFX_AUTH_TOKEN: ${{ secrets.LFX_AUTH_TOKEN }}
