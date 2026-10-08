@@ -19,7 +19,7 @@ jobs:
           fetch-depth: 0
 
       - name: Update Landscape
-        uses: cncf/automation/.github/actions/landscape-update@53810a548b46f33421cd67e57d16e4b7251416d9
+        uses: cncf/automation/.github/actions/landscape-update@d7d25c42f9247f6e4a0f0a99344432c3bbf3447d
         with:
           project_file: 'project.yaml'
           token: ${{ secrets.LANDSCAPE_REPO_TOKEN }}
