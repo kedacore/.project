@@ -52,7 +52,7 @@ repositories:
 
 website: "https://keda.sh/"
 
-artwork: "https://raw.githubusercontent.com/cncf/artwork/main/projects/keda/icon/color/keda-icon-color.svg"
+artwork: "https://github.com/cncf/artwork/tree/main/projects/keda"
 
 adopters:
   path: "https://github.com/kedacore/.project/blob/main/ADOPTERS.md"
